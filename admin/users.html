@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <home-bar heading="Nettbutikk" crumb="vare" getlinks="/htmlfiler/admin" username="/myself">
+    <home-bar heading="Mc Donald's" crumb="meny" getlinks="/htmlfiler/admin" username="/myself">
     </home-bar>
     <div id="admin">
        
@@ -42,10 +42,10 @@
         </form>
     </div>
     <div class="table">
-        <db-table id="table" update="users"  
-            fields="userid:hidden,username,role,password" delete="users"
-            sql="select * from users">
-            <span slot="caption">Users</span>
+        <db-table id="table" update="ansatt"  
+            fields="userid:hidden,username,role,password" delete="ansatt"
+            sql="select * from ansatt">
+            <span slot="caption">ansatt</span>
         </db-table>
     </div>
 </body>
